@@ -51,8 +51,8 @@ const Header = () => {
                         <Link to='/Tempio' onClick={() => handleLinkClick('/Tempio')}>
                             <li className={activeLink === '/Tempio' ? 'active' : ''}>Tempio</li>
                         </Link>
-                        <Link to='/Eco-luminoso' onClick={() => handleLinkClick('/Eco-luminoso')}>
-                            <li className={activeLink === '/Eco-luminoso' ? 'active' : ''}>Eco Luminoso</li>
+                        <Link to='/EcoLuminoso' onClick={() => handleLinkClick('/EcoLuminoso')}>
+                            <li className={activeLink === '/EcoLuminoso' ? 'active' : ''}>Eco Luminoso</li>
                         </Link>
                         <Link to='/Giudizio' onClick={() => handleLinkClick('/Giudizio')}>
                             <li className={activeLink === '/Giudizio' ? 'active' : ''}>Giudizio</li>
