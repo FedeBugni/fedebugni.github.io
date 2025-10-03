@@ -18,18 +18,6 @@ header {
     width: 125px;
 }
 
-header ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 20px;
-    font-size: 16px;
-}
-
-header ul li.active {
-    text-decoration: underline;
-    text-underline-offset: 6px;
-}
-
 .menu-button {
     background: none;
     border: none;
@@ -91,6 +79,10 @@ header ul li.active {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+.sidebar nav ul li:hover {
+    font-weight: bold;
 }
 
 .sidebar nav ul a {

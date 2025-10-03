@@ -18,7 +18,7 @@ const Opere = () => {
       immagine: eco,
       titolo: "Eco Luminoso",
       sottotitolo: "Otolab",
-      link: "/eco-luminoso"
+      link: "/EcoLuminoso"
     },
     {
       immagine: giudizio,

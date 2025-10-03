@@ -8,7 +8,7 @@ import Morte from './pages/Morte.jsx'
 import Sfilata from './pages/Sfilata.jsx'
 import Archive from './pages/Archive.jsx'
 import Tempio from './pages/./Tempio.jsx'
-import EcoLuminoso from './pages/Eco-luminoso.jsx'
+import EcoLuminoso from './pages/EcoLuminoso.jsx'
 import NoPage from './pages/NoPage.jsx'
 import Footer from './components/Footer/Footer.jsx'
 
