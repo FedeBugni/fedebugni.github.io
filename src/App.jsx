@@ -11,12 +11,14 @@ import Tempio from './pages/./Tempio.jsx'
 import EcoLuminoso from './pages/EcoLuminoso.jsx'
 import NoPage from './pages/NoPage.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <div>
       <Header />
-        <Routes>
+      <ScrollToTop />
+      <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/Tempio' element={<Tempio />} />
           <Route path='/EcoLuminoso' element={<EcoLuminoso />} />
