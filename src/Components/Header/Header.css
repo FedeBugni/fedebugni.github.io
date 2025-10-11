@@ -1,8 +1,8 @@
 /* HEADER */
 
 header {
+    background-color: #fff;
     width: 100%;
-    background: #fff;
     position: sticky;
     padding: 0 2%;
     height: 10vh;
@@ -12,45 +12,28 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1500;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    justify-self: start;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
 }
 
 .logo {
     width: 125px;
 }
 
-.menu-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .menu-icon {
-    width: 24px;
-    height: 2px;
-    background-color: #000;
-    position: relative;
+    fill: currentColor; /* prenderà il colore del testo del parent */
 }
 
-.menu-icon::before,
-.menu-icon::after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    background-color: #000;
-    transition: all 0.3s ease;
-}
-
-.menu-icon::before {
-    top: -6px;
-}
-
-.menu-icon::after {
-    bottom: -6px;
+button:hover {
+    opacity: 0.8;
 }
 
 /* SIDEBAR */

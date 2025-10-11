@@ -1,5 +1,4 @@
 import sfilata1 from '../assets/SempoStudio-Sfilata-Briup.jpg'
-import videoFile from '../assets/Sempo Studio - Sfilata - Briup VideoTeaser.mp4'
 import sfilata2 from "../assets/SempoStudio - Sfilata - Briup 05.jpg";
 import sfilata3 from "../assets/SempoStudio - Sfilata - Briup 02.jpg";
 import sfilata4 from "../assets/SempoStudio - Sfilata - Briup 01.jpg";
@@ -24,17 +23,15 @@ const sfilata = () => {
             <div className='img1'>
                 <img src={sfilata1} alt='sfilata'/>
             </div>
-            <div className='video1'>
-                <video
-                    controls
+            <div className='video'>
+                <iframe
                     width="100%"
-                    autoPlay
-                    muted
-                    loop
+                    height="100%"
+                    src="https://www.youtube.com/embed/hNnYeEhpY9s?si=Nh80nvzwI0iNO-jU&controls=0&showinfo=0&rel=0&modestbranding=1&autoplay=1"
+                    allow="autoplay"
+                    frameBorder="0"
                 >
-                    <source src={videoFile} type="video/mp4" />
-                    Il tuo browser non supporta il tag video.
-                </video>
+                </iframe>
             </div>
             <div className='img2'>
                 <div>

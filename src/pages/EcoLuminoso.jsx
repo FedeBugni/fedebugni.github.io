@@ -1,5 +1,4 @@
 import eco1 from '../assets/SempoStudio-ECO_LUMINOSO-01.jpeg'
-import videoFile from '../assets/SempoStudio-ECO_LUMINOSO.mp4' // Aggiungi questo import
 
 const ecoLuminoso = () => {
     return (
@@ -20,17 +19,15 @@ const ecoLuminoso = () => {
             <div className='img1'>
                 <img src={eco1} alt='eco'/>
             </div>
-            <div className='video1'>
-                <video 
-                    controls 
-                    width="100%" 
-                    autoPlay 
-                    muted 
-                    loop
+            <div className='video'>
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/k7FQCVYaAds?si=Nh80nvzwI0iNO-jU&controls=0&showinfo=0&rel=0&modestbranding=1&autoplay=1"
+                    allow="autoplay"
+                    frameBorder="0"
                 >
-                    <source src={videoFile} type="video/mp4" />
-                    Il tuo browser non supporta il tag video.
-                </video>
+                </iframe>
             </div>
         </div>
     )

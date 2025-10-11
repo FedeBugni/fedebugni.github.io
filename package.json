@@ -1,5 +1,5 @@
 {
-  "homepage": "https://fedebugni.github.io/",
+  "homepage": "https://www.sempo-studio.com/",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
@@ -15,6 +15,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-player": "^3.3.3",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1"
   },
