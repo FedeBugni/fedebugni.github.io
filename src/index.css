@@ -6,9 +6,11 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 body {
     background-color: #fff;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -16,8 +18,21 @@ a {
     cursor: pointer;
 }
 
-/* OVERLAY */
+/* HOMEPAGE */
 
+.home-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Titoli sopra le immagini */
 .overlay {
     position: absolute;
     top: 0;
@@ -30,41 +45,9 @@ a {
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     text-align: center;
-    opacity: 0;
     transition: opacity 0.3s ease;
-    text-decoration: none;  /* Rimuove la sottolineatura del link */
-    color: white;          /* Mantiene il testo bianco */
-    cursor: pointer;       /* Cambia il cursore al passaggio del mouse */
-}
-
-.overlay:hover {
-    opacity: 1;
-    color: white;         /* Mantiene il colore bianco anche durante l'hover */
-}
-
-.overlay h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.overlay p {
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-/* HOMEPAGE */
-
-.home-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: white;
-    padding: 20px;
-    gap: 20px;
-    width: 100%;
+    cursor: pointer;
 }
 
 .div-home {
@@ -74,18 +57,21 @@ a {
     position: relative;
 }
 
-.home-container img {
+.div-home img,
+.div-home2-img1 img,
+.div-home3-img1 img,
+.div-home3-img2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* puoi modificare in 'top', 'bottom' in base a quale parte dell'immagine vuoi mostrare */
+    object-position: center;
 }
 
 .div-home2 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .div-home2-img1 {
@@ -97,32 +83,16 @@ a {
 .div-home3 {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
     height: 120vh;
     width: 50%;
 }
 
-.div-home3-img1 {
-    width: 100%;
-    height: 50%;
-    position: relative;
-}
-
+.div-home3-img1,
 .div-home3-img2 {
     width: 100%;
     height: 50%;
     position: relative;
-}
-
-.btn {
-    background: #fff;
-    color: #212121;
-    padding: 14px 25px;
-    font-size: 1.25rem;
-    border-radius: 30px;
-    cursor: pointer;
-    border: 0;
-    outline: 0;
 }
 
 /*  PAGINE  */
@@ -135,34 +105,41 @@ a {
     padding: 20px;
     gap: 20px;
 }
+
 .testo {
     width: 100%;
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 100px;
-    padding-right: 20px;
-    padding-left: 60px;
+    padding: 40px 20px 100px 60px;
     justify-content: space-between;
     font-size: 1rem;
 }
+
 .titolo {
     width: 50%;
     padding-left: 50px;
 }
+
 .descrizione {
     width: 50%;
     height: 100%;
     padding: 0 80px;
 }
+
+.img1 {
+    width: 100%;
+}
+
 .img1 img {
     width: 100%;
 }
+
 .img2 {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+
 .img2 > div {
     height: 900px;
     overflow: hidden;
@@ -177,4 +154,74 @@ a {
 .video {
     height: 90vh;
     aspect-ratio: 16/9;
+}
+
+/* MOBILE E TABLET */
+
+@media screen and (max-width: 768px) {
+
+    /* HOMEPAGE */
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2.5rem 1rem 1rem;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+        opacity: 1;
+    }
+
+    .overlay h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .overlay p {
+        font-size: 0.9rem;
+    }
+
+    .home-container {
+        padding: 0;
+        gap: 5px;
+    }
+
+    .div-home {
+        height: 60vh;
+    }
+
+    .div-home2 {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .div-home2-img1 {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .div-home3 {
+        width: 100%;
+        height: auto;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .div-home3-img1,
+    .div-home3-img2 {
+        height: 60vh;
+    }
+
+    /* PAGINE */
+
+    .video {
+        height: auto;
+        width: 100%;
+        aspect-ratio: 16/9;
+        padding: 0 20px;
+    }
 }

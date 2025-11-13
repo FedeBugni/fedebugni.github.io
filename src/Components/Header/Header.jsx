@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Header.css';
 import logo from '../../assets/SempoStudio-Logo.png';
 import { Link } from 'react-router-dom';
@@ -19,6 +19,21 @@ const Header = () => {
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
+
+    /* permette di non scrollare le pagine mentre la sidebar è aperta */
+
+    useEffect(() => {
+        if (isSidebarOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        // Cleanup function per ripristinare lo scroll quando il componente viene smontato
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isSidebarOpen]);
 
     return (
         <>
@@ -54,21 +69,56 @@ const Header = () => {
             </header>
             
             <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                <button 
+                    className="sidebar-close-button" 
+                    onClick={() => setIsSidebarOpen(false)}
+                    aria-label="Chiudi menu"
+                />
                 <nav>
-                    <ul>
-                        <Link to='/Tempio' onClick={() => handleLinkClick('/Tempio')}>
-                            <li className={activeLink === '/Tempio' ? 'active' : ''}>Tempio</li>
-                        </Link>
-                        <Link to='/EcoLuminoso' onClick={() => handleLinkClick('/EcoLuminoso')}>
-                            <li className={activeLink === '/EcoLuminoso' ? 'active' : ''}>Eco Luminoso</li>
-                        </Link>
-                        <Link to='/Giudizio' onClick={() => handleLinkClick('/Giudizio')}>
-                            <li className={activeLink === '/Giudizio' ? 'active' : ''}>Giudizio</li>
-                        </Link>
-                        <Link to='/Sfilata' onClick={() => handleLinkClick('/Sfilata')}>
-                            <li className={activeLink === '/Sfilata' ? 'active' : ''}>Fashion Show</li>
-                        </Link>
-                    </ul>
+                    <div className="projects-column">
+                        <ul>
+                            <p>Progetti</p>
+                            <Link to='/Tempio' onClick={() => handleLinkClick('/Tempio')}>
+                                <li className={activeLink === '/Tempio' ? 'active' : ''}>Tempio</li>
+                            </Link>
+                            <Link to='/EcoLuminoso' onClick={() => handleLinkClick('/EcoLuminoso')}>
+                                <li className={activeLink === '/EcoLuminoso' ? 'active' : ''}>Eco Luminoso</li>
+                            </Link>
+                            <Link to='/Giudizio' onClick={() => handleLinkClick('/Giudizio')}>
+                                <li className={activeLink === '/Giudizio' ? 'active' : ''}>Giudizio</li>
+                            </Link>
+                            <Link to='/Sfilata' onClick={() => handleLinkClick('/Sfilata')}>
+                                <li className={activeLink === '/Sfilata' ? 'active' : ''}>Fashion Show</li>
+                            </Link>
+                            <Link to='/' onClick={() => handleLinkClick('/')}>
+                                <li className={activeLink === '/' ? 'active' : ''}>Fontana</li>
+                            </Link>
+                            <Link to='/' onClick={() => handleLinkClick('/')}>
+                                <li className={activeLink === '/' ? 'active' : ''}>Ukiyo</li>
+                            </Link>
+                            <Link to='/' onClick={() => handleLinkClick('/')}>
+                                <li className={activeLink === '/' ? 'active' : ''}>Trittico</li>
+                            </Link>
+                            <Link to='/' onClick={() => handleLinkClick('/')}>
+                                <li className={activeLink === '/' ? 'active' : ''}>Tabernacolo</li>
+                            </Link>
+                            <Link to='/' onClick={() => handleLinkClick('/')}>
+                                <li className={activeLink === '/' ? 'active' : ''}>Flusso Oleografico</li>
+                            </Link>
+                        </ul>
+                    </div>
+                    
+                    <div className="other-column">
+                        <ul>
+                            <p>Altro</p>
+                            <Link to='/' onClick={() => handleLinkClick('/')}>
+                                <li className={activeLink === '/' ? 'active' : ''}>Archivio</li>
+                            </Link>
+                            <Link to='/' onClick={() => handleLinkClick('/')}>
+                                <li className={activeLink === '/' ? 'active' : ''}>Esibizioni</li>
+                            </Link>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </>
