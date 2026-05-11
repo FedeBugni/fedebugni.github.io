@@ -7,7 +7,7 @@ import Giudizio from './pages/Giudizio.jsx'
 import Morte from './pages/Morte.jsx'
 import Sfilata from './pages/Sfilata.jsx'
 import Archive from './pages/Archive.jsx'
-import Tempio from './pages/./Tempio.jsx'
+import Tempio from './pages/Tempio.jsx'
 import EcoLuminoso from './pages/EcoLuminoso.jsx'
 import NoPage from './pages/NoPage.jsx'
 import Footer from './components/Footer/Footer.jsx'
@@ -20,14 +20,14 @@ const App = () => {
       <ScrollToTop />
       <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/Tempio' element={<Tempio />} />
-          <Route path='/EcoLuminoso' element={<EcoLuminoso />} />
-          <Route path='/Giudizio' element={<Giudizio />} />
-          <Route path='/Morte' element={<Morte />} />
-          <Route path='/Sfilata' element={<Sfilata />} />
-          <Route path='/Archive' element={<Archive />} />
-          <Route path='/About' element={<About />} />
-          <Route path='/Contacts' element={<Contacts />} />
+          <Route path='/tempio' element={<Tempio />} />
+          <Route path='/ecoLuminoso' element={<EcoLuminoso />} />
+          <Route path='/giudizio' element={<Giudizio />} />
+          <Route path='/morte' element={<Morte />} />
+          <Route path='/sfilata' element={<Sfilata />} />
+          <Route path='/archive' element={<Archive />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contacts' element={<Contacts />} />
           <Route path='*' element={<NoPage />} />
         </Routes>
       <Footer />

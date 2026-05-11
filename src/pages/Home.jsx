@@ -46,7 +46,7 @@ const Home = () => {
                       </div>
                   </Link>
 
-                  <Link to="/EcoLuminoso" className="div-home3-img2">
+                  <Link to="/ecoLuminoso" className="div-home3-img2">
                       <img src={eco1} alt='eco'/>
                       <div className="overlay">
                           <h1>Eco Luminoso</h1>
