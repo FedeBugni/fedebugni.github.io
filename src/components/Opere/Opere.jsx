@@ -5,6 +5,7 @@ import giudizio from '../../assets/SempoStudio-Giudizio-ArtDate 01.jpg'
 import morte from '../../assets/Lavorare con la morte è difficile.png'
 import sfilata from '../../assets/SempoStudio-Sfilata-Briup.jpg'
 import { Link } from 'react-router-dom'
+import LazyImage from "../LazyImage/LazyImage.jsx";
 
 const Opere = () => {
   const opere = [
@@ -49,7 +50,7 @@ const Opere = () => {
               <h2 className="art-title">{opera.titolo}</h2>
               <p className="art-subtitle">{opera.sottotitolo}</p>
             </div>
-            <img src={opera.immagine} alt={opera.titolo} />
+             <LazyImage src={opera.immagine} alt={opera.titolo} />
           </div>
         </Link>
       ))}

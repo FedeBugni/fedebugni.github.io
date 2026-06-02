@@ -5,6 +5,7 @@ import giudizio4 from '../assets/SempoStudio-Giudizio-ArtDate 02.jpg'
 import giudizio5 from '../assets/SempoStudio-Giudizio-ArtDate 05.jpg'
 import giudizio6 from '../assets/SempoStudio-Giudizio-ArtDate 01.jpg'
 import giudizio7 from '../assets/SempoStudio-Giudizio-ArtDate 06.jpg'
+import LazyImage from "../components/LazyImage/LazyImage.jsx";
 
 const Giudizio = () => {
     return (
@@ -23,26 +24,26 @@ const Giudizio = () => {
                 </div>
             </div>
             <div className='img1'>
-                <img src={giudizio1} alt='giudizio'/>
+                <LazyImage src={giudizio1} alt='giudizio'/>
             </div>
             <div className='img2'>
                 <div>
-                    <img src={giudizio2} alt='giudizio'/>
+                    <LazyImage src={giudizio2} alt='giudizio'/>
                 </div>
                 <div>
-                    <img src={giudizio3} alt='giudizio'/>
+                    <LazyImage src={giudizio3} alt='giudizio'/>
                 </div>
                 <div>
-                    <img src={giudizio4} alt='giudizio'/>
+                    <LazyImage src={giudizio4} alt='giudizio'/>
                 </div>
                 <div>
-                    <img src={giudizio5} alt='giudizio'/>
+                    <LazyImage src={giudizio5} alt='giudizio'/>
                 </div>
                 <div>
-                    <img src={giudizio6} alt='giudizio'/>
+                    <LazyImage src={giudizio6} alt='giudizio'/>
                 </div>
                 <div>
-                    <img src={giudizio7} alt='giudizio'/>
+                    <LazyImage src={giudizio7} alt='giudizio'/>
                 </div>
             </div>
 

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './Header.css';
 import logo from '../../assets/SempoStudio-Logo.png';
 import { Link } from 'react-router-dom';
+import LazyImage from "../LazyImage/LazyImage.jsx";
 
 const Header = () => {
     const [activeLink, setActiveLink] = useState('');
@@ -50,7 +51,7 @@ const Header = () => {
 
                 </button>
                 <Link to='/' onClick={handleLogoClick}>
-                    <img src={logo} alt="" className='logo'/>
+                    <LazyImage src={logo} alt="" className='logo' loading="eager"/>
                 </Link>
                 <a href="https://www.instagram.com/sempo_studio/"
                    target="_blank"
@@ -116,6 +117,15 @@ const Header = () => {
                             </Link>
                             <Link to='/' onClick={() => handleLinkClick('/')}>
                                 <li className={activeLink === '/' ? 'active' : ''}>Esibizioni</li>
+                            </Link>
+                        </ul>
+                        <ul>
+                            <p>About Me</p>
+                            <Link to='/' onClick={() => handleLinkClick('/')}>
+                                <li className={activeLink === '/' ? 'active' : ''}>Portfolio</li>
+                            </Link>
+                            <Link to='/' onClick={() => handleLinkClick('/')}>
+                                <li className={activeLink === '/' ? 'active' : ''}>Contact</li>
                             </Link>
                         </ul>
                     </div>
