@@ -51,7 +51,7 @@ const Header = () => {
 
                 </button>
                 <Link to='/' onClick={handleLogoClick}>
-                    <LazyImage src={logo} alt="" className='logo' loading="eager"/>
+                    <LazyImage src={logo} alt="" className='header-logo' loading="eager"/>
                 </Link>
                 <a href="https://www.instagram.com/sempo_studio/"
                    target="_blank"

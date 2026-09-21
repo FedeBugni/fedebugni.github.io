@@ -1,5 +1,5 @@
 .footer {
-    height: 221px;
+    height: 200px;
     margin: 0 auto;
     display: flex;
     background-color: #0C0C0C;
@@ -7,4 +7,12 @@
     justify-content: space-between;
     padding: 15px 81px;
     color: #F6F7F7;
+}
+
+.footer-logo {
+    width: 48px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    flex-shrink: 0;
 }
