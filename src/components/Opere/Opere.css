@@ -1,22 +1,23 @@
 .arts {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: clamp(20px, 3vw, 50px);
     overflow-x: auto;
     margin: 0 -7%;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding: 0 7%;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-snap-type: x proximity;
 }
 
 .art {
     flex: 0 0 auto;
-    width: 374px;
-    height: 597px;
-    min-width: 374px;
+    width: clamp(260px, 24vw, 374px);
+    height: clamp(430px, 40vw, 597px);
+    min-width: clamp(260px, 24vw, 374px);
     position: relative;
+    scroll-snap-align: start;
 }
 
 .art-content {
@@ -34,7 +35,7 @@
     border-radius: 10px;
     display: block;
     object-fit: cover;
-    transition: filter 0.3s ease
+    transition: filter 0.3s ease;
 }
 
 .art:hover img {
@@ -46,18 +47,19 @@
     text-align: center;
     bottom: 100px;
     z-index: 2;
+    padding: 0 1rem;
 }
 
 .art-title {
     color: #F6F7F7;
-    font-size: 1.25rem;
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .art-subtitle {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1.4vw, 1rem);
     font-weight: 400;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -72,4 +74,22 @@
     background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
     border-radius: 10px;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .arts {
+        gap: 18px;
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    .art {
+        width: min(78vw, 320px);
+        height: 420px;
+        min-width: min(78vw, 320px);
+    }
+
+    .art-text {
+        bottom: 60px;
+    }
 }

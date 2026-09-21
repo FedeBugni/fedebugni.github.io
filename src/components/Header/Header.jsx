@@ -78,7 +78,7 @@ const Header = () => {
                 <nav>
                     <div className="projects-column">
                         <ul>
-                            <p>Progetti</p>
+                            <p>PROGETTI</p>
                             <Link to='/Tempio' onClick={() => handleLinkClick('/Tempio')}>
                                 <li className={activeLink === '/Tempio' ? 'active' : ''}>Tempio</li>
                             </Link>
@@ -111,7 +111,7 @@ const Header = () => {
                     
                     <div className="other-column">
                         <ul>
-                            <p>Altro</p>
+                            <p>ALTRO</p>
                             <Link to='/' onClick={() => handleLinkClick('/')}>
                                 <li className={activeLink === '/' ? 'active' : ''}>Archivio</li>
                             </Link>
@@ -120,7 +120,7 @@ const Header = () => {
                             </Link>
                         </ul>
                         <ul>
-                            <p>About Me</p>
+                            <p>ABOUT ME</p>
                             <Link to='/' onClick={() => handleLinkClick('/')}>
                                 <li className={activeLink === '/' ? 'active' : ''}>Portfolio</li>
                             </Link>
