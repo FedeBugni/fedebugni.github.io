@@ -1,7 +1,7 @@
 import tempio1 from '../assets/SempoStudio-Tempio-01.png'
 import tempio2 from '../assets/SempoStudio-Tempio-02.png'
 import tempio3 from '../assets/SempoStudio-Tempio-03.png'
-import LazyImage from "../components/LazyImage/LazyImage.jsx";
+import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const tempio = () => {
   return (

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './Header.css';
 import logo from '../../assets/SempoStudio-Logo.png';
 import { Link } from 'react-router-dom';
-import LazyImage from "../LazyImage/LazyImage.jsx";
+import LazyImage from '../LazyImage/LazyImage.jsx';
 
 const Header = () => {
     const [activeLink, setActiveLink] = useState('');

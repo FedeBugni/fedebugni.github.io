@@ -3,7 +3,7 @@ import sfilata2 from "../assets/SempoStudio - Sfilata - Briup 05.jpg";
 import sfilata3 from "../assets/SempoStudio - Sfilata - Briup 02.jpg";
 import sfilata4 from "../assets/SempoStudio - Sfilata - Briup 01.jpg";
 import sfilata5 from "../assets/SempoStudio - Sfilata - Briup 07.jpg";
-import LazyImage from "../components/LazyImage/LazyImage.jsx";
+import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const sfilata = () => {
     return (

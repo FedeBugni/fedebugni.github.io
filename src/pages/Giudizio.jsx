@@ -5,7 +5,7 @@ import giudizio4 from '../assets/SempoStudio-Giudizio-ArtDate 02.jpg'
 import giudizio5 from '../assets/SempoStudio-Giudizio-ArtDate 05.jpg'
 import giudizio6 from '../assets/SempoStudio-Giudizio-ArtDate 01.jpg'
 import giudizio7 from '../assets/SempoStudio-Giudizio-ArtDate 06.jpg'
-import LazyImage from "../components/LazyImage/LazyImage.jsx";
+import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const Giudizio = () => {
     return (

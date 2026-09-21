@@ -1,4 +1,4 @@
-import Hero from '../components/Hero/Hero'
+import Hero from '../Components/Hero/Hero'
 import '../index.css'
 import { Link } from 'react-router-dom'
 import tempio from "../assets/SempoStudio-Tempio-01.png";
@@ -6,7 +6,7 @@ import sfilata from "../assets/SempoStudio-Sfilata-Briup.jpg";
 import morte from "../assets/Lavorare con la morte è difficile.png";
 import eco1 from "../assets/SempoStudio-ECO_LUMINOSO-01.jpeg";
 import giudizio from "../assets/SempoStudio-Giudizio-ArtDate 07.jpg";
-import LazyImage from "../components/LazyImage/LazyImage";
+import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const Home = () => {
   return (

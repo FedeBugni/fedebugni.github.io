@@ -1,5 +1,5 @@
 import { Routes, Route  } from 'react-router-dom'
-import Header from './components/Header/Header.jsx'
+import Header from './Components/Header/Header.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Contacts from './pages/Contacts.jsx'
@@ -10,8 +10,8 @@ import Archive from './pages/Archive.jsx'
 import Tempio from './pages/Tempio.jsx'
 import EcoLuminoso from './pages/EcoLuminoso.jsx'
 import NoPage from './pages/NoPage.jsx'
-import Footer from './components/Footer/Footer.jsx'
-import ScrollToTop from './components/ScrollToTop';
+import Footer from './Components/Footer/Footer.jsx'
+import ScrollToTop from './Components/ScrollToTop';
 
 const App = () => {
   return (
