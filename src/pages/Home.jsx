@@ -1,6 +1,6 @@
-import Hero from '../Components/Hero/Hero'
-import '../index.css'
-import { Link } from 'react-router-dom'
+import Hero from "../Components/Hero/Hero";
+import "../index.css";
+import { Link } from "react-router-dom";
 import tempio from "../assets/Tempio/SempoStudio-Tempio-01.png";
 import sfilata from "../assets/Sfilata_Briup/SempoStudio-Sfilata-Briup.jpg";
 import morte from "../assets/Lavorareconlamorteèdifficile_TRONO/VillaCabella/Lavorare con la morte è difficile.png";
@@ -13,33 +13,33 @@ const Home = () => {
     <div>
       <Hero />
       <div className="home-container">
-          <Link to="/tempio" className="div-home">
-              <LazyImage src={tempio} alt='tempio'/>
-              <div className="overlay">
-                  <h1>Tempio</h1>
-                  <p>Cascina Cappuccina - Melegnano</p>
-              </div>
+        <Link to="/tempio" className="div-home">
+          <LazyImage src={tempio} alt="tempio" />
+          <div className="overlay">
+            <h1>Tempio</h1>
+            <p>Cascina Cappuccina - Melegnano</p>
+          </div>
+        </Link>
+
+        <Link to="/sfilata" className="div-home">
+          <LazyImage src={sfilata} alt="sfilata" />
+          <div className="overlay">
+            <h1>Sfilata Briup</h1>
+            <p>Cascina Cappuccina - Melegnano</p>
+          </div>
+        </Link>
+
+        <div className="div-home2">
+          <Link to="/giudizio" className="div-home2-img1">
+            <LazyImage src={giudizio} alt="giudizio" />
+            <div className="overlay">
+              <h1>Il Giudizio</h1>
+              <p>Cascina Cappuccina - Melegnano</p>
+            </div>
           </Link>
 
-          <Link to="/sfilata" className="div-home">
-              <LazyImage src={sfilata} alt='sfilata'/>
-              <div className="overlay">
-                  <h1>Sfilata Briup</h1>
-                  <p>Cascina Cappuccina - Melegnano</p>
-              </div>
-          </Link>
-
-          <div className="div-home2">
-              <Link to="/giudizio" className="div-home2-img1">
-                  <LazyImage src={giudizio} alt='giudizio'/>
-                  <div className="overlay">
-                      <h1>Il Giudizio</h1>
-                      <p>Cascina Cappuccina - Melegnano</p>
-                  </div>
-              </Link>
-
+          {/*
               <div className="div-home3">
-                {/*
                 
                   <Link to="/morte" className="div-home3-img1">
                       <LazyImage src={morte} alt='morte'/>
@@ -48,20 +48,21 @@ const Home = () => {
                           <p>Cascina Cappuccina - Melegnano</p>
                       </div>
                   </Link>
-                
-                */}
-                  <Link to="/ecoLuminoso" className="div-home3-img2">
-                      <LazyImage src={eco1} alt='eco'/>
-                      <div className="overlay">
-                          <h1>Eco Luminoso</h1>
-                          <p>Cascina Cappuccina - Melegnano</p>
-                      </div>
-                  </Link>
+*/}
+          <Link to="/ecoLuminoso" className="div-home3-img2">
+            <LazyImage src={eco1} alt="eco" />
+            <div className="overlay">
+              <h1>Eco Luminoso</h1>
+              <p>Cascina Cappuccina - Melegnano</p>
+            </div>
+          </Link>
+          {/*              
               </div>
-          </div>
+*/}
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
