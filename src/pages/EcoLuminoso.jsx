@@ -1,4 +1,4 @@
-import eco1 from '../assets/SempoStudio-ECO_LUMINOSO-01.jpeg'
+import eco1 from '../assets/Eco-Luminoso/SempoStudio-ECO_LUMINOSO-01.jpeg'
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const ecoLuminoso = () => {

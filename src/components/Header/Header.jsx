@@ -91,42 +91,6 @@ const Header = () => {
                             <Link to='/Sfilata' onClick={() => handleLinkClick('/Sfilata')}>
                                 <li className={activeLink === '/Sfilata' ? 'active' : ''}>Fashion Show</li>
                             </Link>
-                            <Link to='/' onClick={() => handleLinkClick('/')}>
-                                <li className={activeLink === '/' ? 'active' : ''}>Fontana</li>
-                            </Link>
-                            <Link to='/' onClick={() => handleLinkClick('/')}>
-                                <li className={activeLink === '/' ? 'active' : ''}>Ukiyo</li>
-                            </Link>
-                            <Link to='/' onClick={() => handleLinkClick('/')}>
-                                <li className={activeLink === '/' ? 'active' : ''}>Trittico</li>
-                            </Link>
-                            <Link to='/' onClick={() => handleLinkClick('/')}>
-                                <li className={activeLink === '/' ? 'active' : ''}>Tabernacolo</li>
-                            </Link>
-                            <Link to='/' onClick={() => handleLinkClick('/')}>
-                                <li className={activeLink === '/' ? 'active' : ''}>Flusso Oleografico</li>
-                            </Link>
-                        </ul>
-                    </div>
-                    
-                    <div className="other-column">
-                        <ul>
-                            <p>ALTRO</p>
-                            <Link to='/' onClick={() => handleLinkClick('/')}>
-                                <li className={activeLink === '/' ? 'active' : ''}>Archivio</li>
-                            </Link>
-                            <Link to='/' onClick={() => handleLinkClick('/')}>
-                                <li className={activeLink === '/' ? 'active' : ''}>Esibizioni</li>
-                            </Link>
-                        </ul>
-                        <ul>
-                            <p>ABOUT ME</p>
-                            <Link to='/' onClick={() => handleLinkClick('/')}>
-                                <li className={activeLink === '/' ? 'active' : ''}>Portfolio</li>
-                            </Link>
-                            <Link to='/' onClick={() => handleLinkClick('/')}>
-                                <li className={activeLink === '/' ? 'active' : ''}>Contact</li>
-                            </Link>
                         </ul>
                     </div>
                 </nav>

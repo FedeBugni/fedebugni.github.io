@@ -1,8 +1,8 @@
-import sfilata1 from '../assets/SempoStudio-Sfilata-Briup.jpg'
-import sfilata2 from "../assets/SempoStudio - Sfilata - Briup 05.jpg";
-import sfilata3 from "../assets/SempoStudio - Sfilata - Briup 02.jpg";
-import sfilata4 from "../assets/SempoStudio - Sfilata - Briup 01.jpg";
-import sfilata5 from "../assets/SempoStudio - Sfilata - Briup 07.jpg";
+import sfilata1 from '../assets/Sfilata_Briup/SempoStudio-Sfilata-Briup.jpg'
+import sfilata2 from "../assets/Sfilata_Briup/SempoStudio - Sfilata - Briup 05.jpg";
+import sfilata3 from "../assets/Sfilata_Briup/SempoStudio - Sfilata - Briup 02.jpg";
+import sfilata4 from "../assets/Sfilata_Briup/SempoStudio - Sfilata - Briup 01.jpg";
+import sfilata5 from "../assets/Sfilata_Briup/SempoStudio - Sfilata - Briup 07.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const sfilata = () => {

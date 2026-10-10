@@ -6,8 +6,9 @@
   align-items: center;
   padding: 2rem;
   background-size: cover;
-  background: url(../../assets/SempoStudio-ECO_LUMINOSO-01.jpeg) center;
-  color: #F6F7F7;
+  background: url(../../assets/Eco-Luminoso/SempoStudio-ECO_LUMINOSO-01.jpeg)
+    center;
+  color: #f6f7f7;
 }
 
 .hero-container {

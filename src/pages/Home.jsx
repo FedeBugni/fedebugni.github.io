@@ -1,11 +1,11 @@
 import Hero from '../Components/Hero/Hero'
 import '../index.css'
 import { Link } from 'react-router-dom'
-import tempio from "../assets/SempoStudio-Tempio-01.png";
-import sfilata from "../assets/SempoStudio-Sfilata-Briup.jpg";
-import morte from "../assets/Lavorare con la morte è difficile.png";
-import eco1 from "../assets/SempoStudio-ECO_LUMINOSO-01.jpeg";
-import giudizio from "../assets/SempoStudio-Giudizio-ArtDate 07.jpg";
+import tempio from "../assets/Tempio/SempoStudio-Tempio-01.png";
+import sfilata from "../assets/Sfilata_Briup/SempoStudio-Sfilata-Briup.jpg";
+import morte from "../assets/Lavorareconlamorteèdifficile_TRONO/VillaCabella/Lavorare con la morte è difficile.png";
+import eco1 from "../assets/Eco-Luminoso/SempoStudio-ECO_LUMINOSO-01.jpeg";
+import giudizio from "../assets/Giudizio/SempoStudio-Giudizio-ArtDate 07.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const Home = () => {
@@ -39,6 +39,8 @@ const Home = () => {
               </Link>
 
               <div className="div-home3">
+                {/*
+                
                   <Link to="/morte" className="div-home3-img1">
                       <LazyImage src={morte} alt='morte'/>
                       <div className="overlay">
@@ -46,7 +48,8 @@ const Home = () => {
                           <p>Cascina Cappuccina - Melegnano</p>
                       </div>
                   </Link>
-
+                
+                */}
                   <Link to="/ecoLuminoso" className="div-home3-img2">
                       <LazyImage src={eco1} alt='eco'/>
                       <div className="overlay">

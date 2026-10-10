@@ -27,12 +27,16 @@ const Opere = () => {
       sottotitolo: "?",
       link: "/giudizio"
     },
+    /*
+
     {
       immagine: morte,
       titolo: "Lavorare con la Morte è difficile",
       sottotitolo: "?",
       link: "/morte"
     },
+    
+    */
     {
       immagine: sfilata,
       titolo: "Sfilata Briup",

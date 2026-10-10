@@ -1,10 +1,10 @@
-import giudizio1 from '../assets/SempoStudio-Giudizio-ArtDate 07.jpg'
-import giudizio2 from '../assets/SempoStudio-Giudizio-ArtDate 03.jpg'
-import giudizio3 from '../assets/SempoStudio-Giudizio-ArtDate 04.jpg'
-import giudizio4 from '../assets/SempoStudio-Giudizio-ArtDate 02.jpg'
-import giudizio5 from '../assets/SempoStudio-Giudizio-ArtDate 05.jpg'
-import giudizio6 from '../assets/SempoStudio-Giudizio-ArtDate 01.jpg'
-import giudizio7 from '../assets/SempoStudio-Giudizio-ArtDate 06.jpg'
+import giudizio1 from '../assets/Giudizio/SempoStudio-Giudizio-ArtDate 07.jpg'
+import giudizio2 from '../assets/Giudizio/SempoStudio-Giudizio-ArtDate 03.jpg'
+import giudizio3 from '../assets/Giudizio/SempoStudio-Giudizio-ArtDate 04.jpg'
+import giudizio4 from '../assets/Giudizio/SempoStudio-Giudizio-ArtDate 02.jpg'
+import giudizio5 from '../assets/Giudizio/SempoStudio-Giudizio-ArtDate 05.jpg'
+import giudizio6 from '../assets/Giudizio/SempoStudio-Giudizio-ArtDate 01.jpg'
+import giudizio7 from '../assets/Giudizio/SempoStudio-Giudizio-ArtDate 06.jpg'
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const Giudizio = () => {
