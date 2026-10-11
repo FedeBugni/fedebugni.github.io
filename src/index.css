@@ -30,6 +30,9 @@ a {
   cursor: pointer;
 }
 
+h3 {
+}
+
 /* HOMEPAGE */
 
 .home-container {
@@ -141,6 +144,10 @@ a {
 .titolo {
   width: 100%;
   padding-left: 0;
+}
+
+.titolo p {
+  font-style: italic;
 }
 
 .descrizione {

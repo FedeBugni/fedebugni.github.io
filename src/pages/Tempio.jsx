@@ -1,37 +1,40 @@
-import tempio1 from '../assets/Tempio/SempoStudio-Tempio-01.png'
-import tempio2 from '../assets/Tempio/SempoStudio-Tempio-02.png'
-import tempio3 from '../assets/Tempio/SempoStudio-Tempio-03.png'
+import tempio1 from "../assets/Tempio/SempoStudio-Tempio-01.png";
+import tempio2 from "../assets/Tempio/SempoStudio-Tempio-02.png";
+import tempio3 from "../assets/Tempio/SempoStudio-Tempio-03.png";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const tempio = () => {
   return (
-    <div className='container'>
-        <div className='testo'>
-            <div className='titolo'>
-                <h2>Tempio</h2>
-                <p>Cascina Cappuccina - Melegnano</p>
-            </div>
-            <div className='descrizione'>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                </p>
-            </div>
+    <div className="container">
+      <div className="testo">
+        <div className="titolo">
+          <h2>Tempio</h2>
+          <p>Cascina Cappuccina - Melegnano</p>
         </div>
-        <div className='img1'>
-            <LazyImage src={tempio1} alt='tempio'/>
+        <div className="descrizione">
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. It is a
+            long established fact that a reader will be distracted by the
+            readable content of a page when looking at its layout. It is a long
+            established fact that a reader will be distracted by the readable
+            content of a page when looking at its layout.
+          </p>
         </div>
-        <div className='img2'>
-            <div>
-                <LazyImage src={tempio2} alt='tempio'/>
-            </div>
-            <div>
-                <LazyImage src={tempio3} alt='tempio'/>
-            </div>
+      </div>
+      <div className="img1">
+        <LazyImage src={tempio1} alt="tempio" />
+      </div>
+      <div className="img2">
+        <div>
+          <LazyImage src={tempio2} alt="tempio" />
         </div>
+        <div>
+          <LazyImage src={tempio3} alt="tempio" />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default tempio
+export default tempio;
