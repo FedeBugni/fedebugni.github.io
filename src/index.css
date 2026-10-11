@@ -256,6 +256,7 @@ a {
 
   .div-home3-img1,
   .div-home3-img2 {
+    flex: 0 0 auto;
     height: 52vh;
     min-height: 300px;
   }

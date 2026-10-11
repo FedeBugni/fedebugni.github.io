@@ -38,27 +38,13 @@ const Home = () => {
             </div>
           </Link>
 
-          {/*
-              <div className="div-home3">
-                
-                  <Link to="/morte" className="div-home3-img1">
-                      <LazyImage src={morte} alt='morte'/>
-                      <div className="overlay">
-                          <h1>Lavorare con la Morte è difficile</h1>
-                          <p>Cascina Cappuccina - Melegnano</p>
-                      </div>
-                  </Link>
-*/}
-          <Link to="/ecoLuminoso" className="div-home3-img2">
+          <Link to="/ecoLuminoso" className="div-home2-img1">
             <LazyImage src={eco1} alt="eco" />
             <div className="overlay">
               <h1>Eco Luminoso</h1>
               <p>Cascina Cappuccina - Melegnano</p>
             </div>
           </Link>
-          {/*              
-              </div>
-*/}
         </div>
       </div>
     </div>
