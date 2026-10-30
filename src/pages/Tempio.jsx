@@ -1,6 +1,7 @@
 import tempio1 from "../assets/Tempio/SempoStudio-Tempio-01.png";
 import tempio2 from "../assets/Tempio/SempoStudio-Tempio-02.png";
 import tempio3 from "../assets/Tempio/SempoStudio-Tempio-03.png";
+import tempio4 from "../assets/Tempio/SEMPO_HP_MBL_393×440_Tempio.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const tempio = () => {
@@ -23,7 +24,7 @@ const tempio = () => {
         </div>
       </div>
       <div className="img1">
-        <LazyImage src={tempio1} alt="tempio" />
+        <LazyImage src={tempio4} alt="tempio" />
       </div>
       <div className="img2">
         <div>
