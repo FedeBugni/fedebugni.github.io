@@ -1,7 +1,9 @@
-import tempio1 from "../assets/Tempio/SempoStudio-Tempio-01.png";
-import tempio2 from "../assets/Tempio/SempoStudio-Tempio-02.png";
-import tempio3 from "../assets/Tempio/SempoStudio-Tempio-03.png";
-import tempio4 from "../assets/Tempio/SEMPO_HP_MBL_393×440_Tempio.jpg";
+import tempioDSK from "../assets/Tempio/SEMPO_HP_DSK_1480×700_Tempio.jpg";
+import tempioMBL from "../assets/Tempio/SEMPO_HP_MBL_730×800_Tempio_01a.jpg";
+import tempio1 from "../assets/Tempio/SEMPO_HP_DSK_MBL_730×800_Tempio_01.jpg";
+import tempio2 from "../assets/Tempio/SEMPO_HP_DSK_MBL_730×800_Tempio_02.jpg";
+import tempio3 from "../assets/Tempio/SEMPO_HP_DSK_MBL_730×800_Tempio_03.jpg";
+import tempio4 from "../assets/Tempio/SEMPO_HP_DSK_MBL_730×800_Tempio_04.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const tempio = () => {
@@ -24,7 +26,10 @@ const tempio = () => {
         </div>
       </div>
       <div className="img1">
-        <LazyImage src={tempio4} alt="tempio" />
+        <picture>
+          <source media="(max-width: 786px)" srcSet={tempioMBL} />
+          <LazyImage src={tempioDSK} alt="Tempio" />
+        </picture>
       </div>
       <div className="img2">
         <div>

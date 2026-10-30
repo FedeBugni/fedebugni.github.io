@@ -1,8 +1,9 @@
-import sfilata1 from "../assets/Sfilata_Briup/SempoStudio-Sfilata-Briup.jpg";
-import sfilata2 from "../assets/Sfilata_Briup/SempoStudio - Sfilata - Briup 05.jpg";
-import sfilata3 from "../assets/Sfilata_Briup/SempoStudio - Sfilata - Briup 02.jpg";
-import sfilata4 from "../assets/Sfilata_Briup/SempoStudio - Sfilata - Briup 01.jpg";
-import sfilata5 from "../assets/Sfilata_Briup/SempoStudio - Sfilata - Briup 07.jpg";
+import sfilata1DSK from "../assets/Sfilata/SEMPO_HP_DSK_1480×700_Sfilata.jpg";
+import sfilata1MBL from "../assets/Sfilata/SEMPO_HP_MBL_730×800_Sfilata_01a.jpg";
+import sfilata2 from "../assets/Sfilata/SEMPO_HP_DSK_MBL_730×800_Sfilata_01.jpg";
+import sfilata3 from "../assets/Sfilata/SEMPO_HP_DSK_MBL_730×800_Sfilata_02.jpg";
+import sfilata4 from "../assets/Sfilata/SEMPO_HP_DSK_MBL_730×800_Sfilata_03.jpg";
+import sfilata5 from "../assets/Sfilata/SEMPO_HP_DSK_MBL_730×800_Sfilata_04.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const sfilata = () => {
@@ -35,7 +36,10 @@ const sfilata = () => {
       </div>
 
       <div className="img1">
-        <LazyImage src={sfilata1} alt="sfilata" />
+        <picture>
+          <source media="(max-width: 786px)" srcSet={sfilata1MBL} />
+          <LazyImage src={sfilata1DSK} alt="Sfilata" />
+        </picture>
       </div>
 
       <div className="img2">

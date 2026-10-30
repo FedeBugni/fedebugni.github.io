@@ -1,18 +1,17 @@
 .hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   background-size: cover;
-  background: url(../../assets/Eco-Luminoso/SempoStudio-ECO_LUMINOSO-01.jpeg)
-    center;
+  background: url(../../assets/HOMEPAGE/SEMPO_HP_DSK_1480×700_Cover.jpg) center;
   color: #f6f7f7;
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-height: 70vh;
   margin: 0 auto;
   display: flex;
   gap: 2rem;
@@ -39,7 +38,7 @@
 }
 
 /* Media query per mobile e tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 786px) {
   .hero {
     display: none;
   }
