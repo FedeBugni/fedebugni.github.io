@@ -29,7 +29,7 @@ const sfilata = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/hNnYeEhpY9s?si=Nh80nvzwI0iNO-jU&controls=0&showinfo=0&rel=0&modestbranding=1&autoplay=0"
+          src="https://www.youtube.com/embed/9dzlndl7W1w?si=uTYjJwtUYk-r0J7n&controls=0&showinfo=0&rel=0&modestbranding=1&autoplay=1"
           allow="autoplay"
           frameBorder="0"
         ></iframe>

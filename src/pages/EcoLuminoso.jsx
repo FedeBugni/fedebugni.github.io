@@ -30,9 +30,10 @@ const ecoLuminoso = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/k7FQCVYaAds?si=Nh80nvzwI0iNO-jU&controls=0&showinfo=0&rel=0&modestbranding=1&autoplay=0"
+          src="https://www.youtube.com/embed/tsesPvl_jcg?si=1T0b7vwIj8W4bhQ6&controls=0&showinfo=0&rel=0&modestbranding=1&autoplay=1"
           allow="autoplay"
           frameBorder="0"
+          title="Eco Luminoso"
         ></iframe>
       </div>
 
