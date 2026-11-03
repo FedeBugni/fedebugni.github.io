@@ -1,9 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header.jsx";
 import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Contacts from "./pages/Contacts.jsx";
-import Archive from "./pages/Archive.jsx";
 import Tempio from "./pages/Tempio.jsx";
 import Sfilata from "./pages/Sfilata.jsx";
 import Giudizio from "./pages/Giudizio.jsx";
@@ -31,9 +28,6 @@ const App = () => {
         <Route path="/sorgente" element={<Sorgente />} />
         <Route path="/lcmd" element={<Lcmd />} />
         <Route path="/muovoMusica" element={<MuovoMusica />} />
-        <Route path="/archive" element={<Archive />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contacts" element={<Contacts />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
       <Footer />
