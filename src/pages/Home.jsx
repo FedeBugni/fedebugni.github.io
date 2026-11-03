@@ -1,20 +1,20 @@
 import Hero from "../Components/Hero/Hero";
 import "../index.css";
 import { Link } from "react-router-dom";
-import tempioDSK from "../assets/HOMEPAGE/SEMPO_HP_DSK_1480×700_Tempio.jpg";
-import tempioMBL from "../assets/HOMEPAGE/SEMPO_HP_MBL_786×880_Tempio.jpg";
-import sfilataDSK from "../assets/HOMEPAGE/SEMPO_HP_DSK_1480×700_Sfilata.jpg";
-import sfilataMBL from "../assets/HOMEPAGE/SEMPO_HP_MBL_786×880_SfilataBriup.jpg";
-import ecoLuminoso from "../assets/HOMEPAGE/SEMPO_HP_DSK_MBL_730×800_EcoLuminoso.jpg";
-import giudizio from "../assets/HOMEPAGE/SEMPO_HP_DSK_MBL_730×800_Giudizio.jpg";
-import tabernacoloDSK from "../assets/HOMEPAGE/SEMPO_HP_DSK_1480×700_Tabernacolo.jpg";
-import tabernacoloMBL from "../assets/HOMEPAGE/SEMPO_HP_MBL_786×880_Tabernacolo.jpg";
-import tritticoDSK from "../assets/HOMEPAGE/SEMPO_HP_DSK_1480×700_Trittico.jpg";
-import tritticoMBL from "../assets/HOMEPAGE/SEMPO_HP_MBL_786×880_Trittico.jpg";
-import armature from "../assets/HOMEPAGE/SEMPO_HP_DSK_MBL_730×800_Armature.jpg";
-import flussoOleografico from "../assets/HOMEPAGE/SEMPO_HP_DSK_MBL_730×800_FlussoOleografico.jpg";
-import sorgente from "../assets/HOMEPAGE/SEMPO_HP_DSK_MBL_730×800_Sorgente.jpg";
-import trono from "../assets/HOMEPAGE/SEMPO_HP_DSK_MBL_730×800_Lavorareconlamorteèdifficile.jpg";
+import tempioDSK from "../assets/Home/SEMPO_HP_DSK_1480×700_Tempio.jpg";
+import tempioMBL from "../assets/Home/SEMPO_HP_MBL_786×880_Tempio.jpg";
+import sfilataDSK from "../assets/Home/SEMPO_HP_DSK_1480×700_Sfilata.jpg";
+import sfilataMBL from "../assets/Home/SEMPO_HP_MBL_786×880_SfilataBriup.jpg";
+import ecoLuminoso from "../assets/Home/SEMPO_HP_DSK_MBL_730×800_EcoLuminoso.jpg";
+import giudizio from "../assets/Home/SEMPO_HP_DSK_MBL_730×800_Giudizio.jpg";
+import tabernacoloDSK from "../assets/Home/SEMPO_HP_DSK_1480×700_Tabernacolo.jpg";
+import tabernacoloMBL from "../assets/Home/SEMPO_HP_MBL_786×880_Tabernacolo.jpg";
+import tritticoDSK from "../assets/Home/SEMPO_HP_DSK_1480×700_Trittico.jpg";
+import tritticoMBL from "../assets/Home/SEMPO_HP_MBL_786×880_Trittico.jpg";
+import armature from "../assets/Home/SEMPO_HP_DSK_MBL_730×800_Armature.jpg";
+import flussoOleografico from "../assets/Home/SEMPO_HP_DSK_MBL_730×800_FlussoOleografico.jpg";
+import sorgente from "../assets/Home/SEMPO_HP_DSK_MBL_730×800_Sorgente.jpg";
+import lcmd from "../assets/Home/SEMPO_HP_DSK_MBL_730×800_Lavorareconlamorteèdifficile.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const Home = () => {
@@ -100,8 +100,8 @@ const Home = () => {
             </div>
           </Link>
 
-          <Link to="/trono" className="div-home2-img1">
-            <LazyImage src={trono} alt="trono" />
+          <Link to="/lcmd" className="div-home2-img1">
+            <LazyImage src={lcmd} alt="lcmd" />
             <div className="overlay">
               <h1>Lavorare con la morte è difficile</h1>
               <p>Cascina Cappuccina - Melegnano</p>
@@ -115,7 +115,7 @@ const Home = () => {
             <LazyImage src={tritticoDSK} alt="trittico" />
           </picture>
           <div className="overlay">
-            <h1>Tabernacolo</h1>
+            <h1>Trittico</h1>
             <p>Cascina Cappuccina - Melegnano</p>
           </div>
         </Link>

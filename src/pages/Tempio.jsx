@@ -6,7 +6,7 @@ import tempio3 from "../assets/Tempio/SEMPO_HP_DSK_MBL_730×800_Tempio_03.jpg";
 import tempio4 from "../assets/Tempio/SEMPO_HP_DSK_MBL_730×800_Tempio_04.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
-const tempio = () => {
+const Tempio = () => {
   return (
     <div className="container">
       <div className="testo">
@@ -28,19 +28,27 @@ const tempio = () => {
       <div className="img1">
         <picture>
           <source media="(max-width: 786px)" srcSet={tempioMBL} />
-          <LazyImage src={tempioDSK} alt="Tempio" />
+          <LazyImage src={tempioDSK} alt="tempio" />
         </picture>
       </div>
       <div className="img2">
         <div>
-          <LazyImage src={tempio2} alt="tempio" />
+          <LazyImage src={tempio1} alt="tempio" />
         </div>
         <div>
+          <LazyImage src={tempio2} alt="tempio" />
+        </div>
+      </div>
+      <div className="img2">
+        <div>
           <LazyImage src={tempio3} alt="tempio" />
+        </div>
+        <div>
+          <LazyImage src={tempio4} alt="tempio" />
         </div>
       </div>
     </div>
   );
 };
 
-export default tempio;
+export default Tempio;

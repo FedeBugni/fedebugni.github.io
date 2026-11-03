@@ -6,7 +6,7 @@ import eco3 from "../assets/Eco Luminoso/SEMPO_HP_DSK_MBL_730×800_EcoLuminoso_0
 import eco4 from "../assets/Eco Luminoso/SEMPO_HP_DSK_MBL_730×800_EcoLuminoso_04.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
-const ecoLuminoso = () => {
+const EcoLuminoso = () => {
   return (
     <div className="container">
       <div className="testo">
@@ -38,10 +38,28 @@ const ecoLuminoso = () => {
       </div>
 
       <div className="img1">
-        <LazyImage src={eco1} alt="eco" />
+        <picture>
+          <source media="(max-width: 786px)" srcSet={ecoMBL} />
+          <LazyImage src={ecoDSK} alt="eco" />
+        </picture>
+      </div>
+
+      <div className="img2">
+        <div>
+          <LazyImage src={eco1} alt="eco" />
+        </div>
+        <div>
+          <LazyImage src={eco2} alt="eco" />
+        </div>
+        <div>
+          <LazyImage src={eco3} alt="eco" />
+        </div>
+        <div>
+          <LazyImage src={eco4} alt="eco" />
+        </div>
       </div>
     </div>
   );
 };
 
-export default ecoLuminoso;
+export default EcoLuminoso;

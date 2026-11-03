@@ -6,7 +6,7 @@ import sfilata4 from "../assets/Sfilata/SEMPO_HP_DSK_MBL_730×800_Sfilata_03.jpg
 import sfilata5 from "../assets/Sfilata/SEMPO_HP_DSK_MBL_730×800_Sfilata_04.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
-const sfilata = () => {
+const Sfilata = () => {
   return (
     <div className="container">
       <div className="testo">
@@ -38,7 +38,7 @@ const sfilata = () => {
       <div className="img1">
         <picture>
           <source media="(max-width: 786px)" srcSet={sfilata1MBL} />
-          <LazyImage src={sfilata1DSK} alt="Sfilata" />
+          <LazyImage src={sfilata1DSK} alt="sfilata" />
         </picture>
       </div>
 
@@ -60,4 +60,4 @@ const sfilata = () => {
   );
 };
 
-export default sfilata;
+export default Sfilata;

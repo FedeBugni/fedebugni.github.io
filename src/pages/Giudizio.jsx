@@ -26,12 +26,20 @@ const Giudizio = () => {
         </div>
       </div>
       <div className="img1">
-        <LazyImage src={giudizio1} alt="giudizio" />
+        <picture>
+          <source media="(max-width: 786px)" srcSet={giudizioMBL} />
+          <LazyImage src={giudizioDSK} alt="giudizio" />
+        </picture>
       </div>
       <div className="img2">
         <div>
+          <LazyImage src={giudizio1} alt="giudizio" />
+        </div>
+        <div>
           <LazyImage src={giudizio2} alt="giudizio" />
         </div>
+      </div>
+      <div className="img2">
         <div>
           <LazyImage src={giudizio3} alt="giudizio" />
         </div>

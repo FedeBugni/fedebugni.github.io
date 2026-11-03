@@ -187,7 +187,9 @@ a {
   display: block;
 }
 
-@media (max-width: 1024px) {
+/* MOBILE E TABLET */
+
+@media screen and (max-width: 786px) {
   .testo {
     grid-template-columns: 1fr;
   }
@@ -195,11 +197,7 @@ a {
   .img2 {
     grid-template-columns: 1fr;
   }
-}
 
-/* MOBILE E TABLET */
-
-@media screen and (max-width: 786px) {
   .overlay {
     position: absolute;
     top: 0;
