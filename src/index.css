@@ -38,10 +38,9 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #f6f7f7;
   width: 100%;
   gap: 1.25rem;
-  padding: 1.25rem 13.75rem;
+  padding: 1.25rem 13.75rem 7.5rem 13.75rem;
 }
 
 .overlay {
@@ -61,17 +60,14 @@ a {
 }
 
 .div-home:hover .overlay,
-.div-home2-img1:hover .overlay,
-.div-home3-img1:hover .overlay,
-.div-home3-img2:hover .overlay {
+.div-home2-img1:hover .overlay {
   opacity: 1;
 }
 
 .div-home {
   display: block;
   width: 100%;
-  height: min(70vh, 780px);
-  min-height: 320px;
+  height: min(70vh, 700px);
   overflow: hidden;
   position: relative;
 }
@@ -83,9 +79,7 @@ a {
 }
 
 .div-home img,
-.div-home2-img1 img,
-.div-home3-img1 img,
-.div-home3-img2 img {
+.div-home2-img1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -100,26 +94,8 @@ a {
 }
 
 .div-home2-img1 {
-  height: min(70vh, 780px);
-  min-height: 320px;
+  height: min(70vh, 700px);
   width: 50%;
-  position: relative;
-}
-
-.div-home3 {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  height: min(70vh, 780px);
-  min-height: 320px;
-  width: 50%;
-}
-
-.div-home3-img1,
-.div-home3-img2 {
-  width: 100%;
-  flex: 1;
-  min-height: 0;
   position: relative;
 }
 
@@ -131,7 +107,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem 13.75rem;
+  padding: 1.25rem 13.75rem 7.5rem 13.75rem;
   gap: 1.25rem;
 }
 
@@ -157,6 +133,12 @@ a {
   width: 100%;
   height: 100%;
   padding: 0;
+}
+
+.esposizione {
+  width: 100%;
+  padding-bottom: 7.5rem;
+  font-style: italic;
 }
 
 .img1 {
@@ -189,7 +171,7 @@ a {
 
 /* MOBILE E TABLET */
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 730px) {
   .testo {
     grid-template-columns: 1fr;
   }
@@ -228,12 +210,11 @@ a {
   .home-container {
     width: 100%;
     padding: 0;
-    gap: 5px;
+    gap: 0.313rem;
   }
 
   .div-home {
-    height: 52vh;
-    min-height: 800px;
+    height: min(70vh, 700px);
   }
 
   .div-home2 {
@@ -244,31 +225,16 @@ a {
 
   .div-home2-img1 {
     width: 100%;
-    height: 52vh;
-    min-height: 800px;
-  }
-
-  .div-home3 {
-    width: 100%;
-    height: auto;
-    gap: 0.3rem;
-    margin-bottom: 0.3rem;
-  }
-
-  .div-home3-img1,
-  .div-home3-img2 {
-    flex: 0 0 auto;
-    height: 52vh;
-    min-height: 800px;
+    height: min(70vh, 700px);
   }
 
   .container {
-    padding: 10px;
-    gap: 12px;
+    padding: 0.625rem;
+    gap: 0.75rem;
   }
 
   .img2 {
-    gap: 12px;
+    gap: 0.75rem;
   }
 
   .video {

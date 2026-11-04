@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <button onClick={toggleSidebar}>
+        <button className="header-menu-button" onClick={toggleSidebar}>
           <svg
             className="menu-icon"
             xmlns="http://www.w3.org/2000/svg"

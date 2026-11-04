@@ -7,6 +7,7 @@ import Giudizio from "./pages/Giudizio.jsx";
 import EcoLuminoso from "./pages/EcoLuminoso.jsx";
 import Tabernacolo from "./pages/Tabernacolo.jsx";
 import Sorgente from "./pages/Sorgente.jsx";
+import Armature from "./pages/Armature.jsx";
 import Lcmd from "./pages/Lcmd.jsx";
 import MuovoMusica from "./pages/MuovoMusica.jsx";
 import NoPage from "./pages/NoPage.jsx";
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/ecoLuminoso" element={<EcoLuminoso />} />
         <Route path="/tabernacolo" element={<Tabernacolo />} />
         <Route path="/sorgente" element={<Sorgente />} />
+        <Route path="/armature" element={<Armature />} />
         <Route path="/lcmd" element={<Lcmd />} />
         <Route path="/muovoMusica" element={<MuovoMusica />} />
         <Route path="*" element={<NoPage />} />

@@ -33,7 +33,7 @@ const Tabernacolo = () => {
       </div>
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={tabernacoloMBL1} />
+          <source media="(max-width: 730px)" srcSet={tabernacoloMBL1} />
           <LazyImage src={tabernacoloDSK1} alt="tabernacolo" />
         </picture>
       </div>
@@ -53,9 +53,10 @@ const Tabernacolo = () => {
           <LazyImage src={tabernacolo4} alt="tabernacolo" />
         </div>
       </div>
+
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={tabernacoloMBL2} />
+          <source media="(max-width: 730px)" srcSet={tabernacoloMBL2} />
           <LazyImage src={tabernacoloDSK2} alt="tabernacolo" />
         </picture>
       </div>
@@ -74,6 +75,10 @@ const Tabernacolo = () => {
         <div>
           <LazyImage src={tabernacolo8} alt="tabernacolo" />
         </div>
+      </div>
+
+      <div className="esposizione">
+        <p>Officine Badoni</p>
       </div>
     </div>
   );

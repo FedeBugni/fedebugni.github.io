@@ -39,7 +39,7 @@ const EcoLuminoso = () => {
 
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={ecoMBL} />
+          <source media="(max-width: 730px)" srcSet={ecoMBL} />
           <LazyImage src={ecoDSK} alt="eco" />
         </picture>
       </div>
@@ -51,6 +51,8 @@ const EcoLuminoso = () => {
         <div>
           <LazyImage src={eco2} alt="eco" />
         </div>
+      </div>
+      <div className="img2">
         <div>
           <LazyImage src={eco3} alt="eco" />
         </div>

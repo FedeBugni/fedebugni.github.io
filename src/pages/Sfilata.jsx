@@ -25,6 +25,7 @@ const Sfilata = () => {
           </p>
         </div>
       </div>
+
       <div className="video">
         <iframe
           width="100%"
@@ -37,7 +38,7 @@ const Sfilata = () => {
 
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={sfilata1MBL} />
+          <source media="(max-width: 730px)" srcSet={sfilata1MBL} />
           <LazyImage src={sfilata1DSK} alt="sfilata" />
         </picture>
       </div>
@@ -49,6 +50,8 @@ const Sfilata = () => {
         <div>
           <LazyImage src={sfilata3} alt="sfilata" />
         </div>
+      </div>
+      <div className="img2">
         <div>
           <LazyImage src={sfilata4} alt="sfilata" />
         </div>

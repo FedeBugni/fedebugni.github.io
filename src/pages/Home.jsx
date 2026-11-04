@@ -9,6 +9,8 @@ import ecoLuminoso from "../assets/Home/SEMPO_HP_DSK_MBL_730×800_EcoLuminoso.jp
 import giudizio from "../assets/Home/SEMPO_HP_DSK_MBL_730×800_Giudizio.jpg";
 import tabernacoloDSK from "../assets/Home/SEMPO_HP_DSK_1480×700_Tabernacolo.jpg";
 import tabernacoloMBL from "../assets/Home/SEMPO_HP_MBL_786×880_Tabernacolo.jpg";
+import musicaDSK from "../assets/MuovoMusica/SEMPO_HP_DSK_1480×700_MuovoMusica_02.jpg";
+import musicaMBL from "../assets/MuovoMusica/SEMPO_HP_MBL_730×800_MuovoMusica_02b.jpg";
 import tritticoDSK from "../assets/Home/SEMPO_HP_DSK_1480×700_Trittico.jpg";
 import tritticoMBL from "../assets/Home/SEMPO_HP_MBL_786×880_Trittico.jpg";
 import armature from "../assets/Home/SEMPO_HP_DSK_MBL_730×800_Armature.jpg";
@@ -24,7 +26,7 @@ const Home = () => {
       <div className="home-container">
         <Link to="/tempio" className="div-home">
           <picture>
-            <source media="(max-width: 786px)" srcSet={tempioMBL} />
+            <source media="(max-width: 730px)" srcSet={tempioMBL} />
             <LazyImage src={tempioDSK} alt="tempio" />
           </picture>
           <div className="overlay">
@@ -35,7 +37,7 @@ const Home = () => {
 
         <Link to="/sfilata" className="div-home">
           <picture>
-            <source media="(max-width: 786px)" srcSet={sfilataMBL} />
+            <source media="(max-width: 730px)" srcSet={sfilataMBL} />
             <LazyImage src={sfilataDSK} alt="sfilata" />
           </picture>
           <div className="overlay">
@@ -64,11 +66,22 @@ const Home = () => {
 
         <Link to="/tabernacolo" className="div-home">
           <picture>
-            <source media="(max-width: 786px)" srcSet={tabernacoloMBL} />
+            <source media="(max-width: 730px)" srcSet={tabernacoloMBL} />
             <LazyImage src={tabernacoloDSK} alt="tabernacolo" />
           </picture>
           <div className="overlay">
             <h1>Tabernacolo</h1>
+            <p>Cascina Cappuccina - Melegnano</p>
+          </div>
+        </Link>
+
+        <Link to="/muovoMusica" className="div-home">
+          <picture>
+            <source media="(max-width: 730px)" srcSet={musicaMBL} />
+            <LazyImage src={musicaDSK} alt="muovoMusica" />
+          </picture>
+          <div className="overlay">
+            <h1>Muovo Musica</h1>
             <p>Cascina Cappuccina - Melegnano</p>
           </div>
         </Link>
@@ -111,7 +124,7 @@ const Home = () => {
 
         <Link to="/trittico" className="div-home">
           <picture>
-            <source media="(max-width: 786px)" srcSet={tritticoMBL} />
+            <source media="(max-width: 730px)" srcSet={tritticoMBL} />
             <LazyImage src={tritticoDSK} alt="trittico" />
           </picture>
           <div className="overlay">

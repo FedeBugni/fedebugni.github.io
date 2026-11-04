@@ -2,13 +2,12 @@ import lcmdDSK1 from "../assets/LCMD/SEMPO_HP_DSK_1480×700_LCMD_01a.jpg";
 import lcmdMBL1 from "../assets/LCMD/SEMPO_HP_MBL_730×800_LCMD_01a.jpg";
 import lcmd1 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_01.jpg";
 import lcmd2 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_02.jpg";
-import lcmd3 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_03-1.jpg";
-import lcmd4 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_03.jpg";
+import lcmd5 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_03-1.jpg";
+import lcmd3 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_03.jpg";
 import lcmdDSK2 from "../assets/LCMD/SEMPO_HP_DSK_1480×700_LCMD_02a.jpg";
 import lcmdMBL2 from "../assets/LCMD/SEMPO_HP_MBL_730×800_LCMD_02a.jpg";
-import lcmd5 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_04-1.jpg";
-import lcmd6 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_04.jpg";
-
+import lcmd6 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_04-1.jpg";
+import lcmd4 from "../assets/LCMD/SEMPO_HP_DSK_MBL_730×800_LCMD_04.jpg";
 import LazyImage from "../Components/LazyImage/LazyImage.jsx";
 
 const Lcmd = () => {
@@ -32,7 +31,7 @@ const Lcmd = () => {
       </div>
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={lcmdMBL1} />
+          <source media="(max-width: 730px)" srcSet={lcmdMBL1} />
           <LazyImage src={lcmdDSK1} alt="lcmd" />
         </picture>
       </div>
@@ -52,9 +51,14 @@ const Lcmd = () => {
           <LazyImage src={lcmd4} alt="lcmd" />
         </div>
       </div>
+
+      <div className="esposizione">
+        <p>Briup</p>
+      </div>
+
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={lcmdMBL2} />
+          <source media="(max-width: 730px)" srcSet={lcmdMBL2} />
           <LazyImage src={lcmdDSK2} alt="lcmd" />
         </picture>
       </div>
@@ -65,6 +69,10 @@ const Lcmd = () => {
         <div>
           <LazyImage src={lcmd6} alt="lcmd" />
         </div>
+      </div>
+
+      <div className="esposizione">
+        <p>Villa Cabella</p>
       </div>
     </div>
   );

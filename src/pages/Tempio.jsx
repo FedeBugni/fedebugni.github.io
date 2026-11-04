@@ -25,9 +25,20 @@ const Tempio = () => {
           </p>
         </div>
       </div>
+
+      <div className="video">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/XXZFpChn4nY?si=_dsGiVaxKUuTeBsj&controls=0&showinfo=0&rel=0&modestbranding=1&autoplay=1"
+          allow="autoplay"
+          frameBorder="0"
+        ></iframe>
+      </div>
+
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={tempioMBL} />
+          <source media="(max-width: 730px)" srcSet={tempioMBL} />
           <LazyImage src={tempioDSK} alt="tempio" />
         </picture>
       </div>

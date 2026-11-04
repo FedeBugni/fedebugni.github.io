@@ -29,7 +29,7 @@ const Sorgente = () => {
       </div>
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={sorgenteMBL} />
+          <source media="(max-width: 730px)" srcSet={sorgenteMBL} />
           <LazyImage src={sorgenteDSK} alt="sorgente" />
         </picture>
       </div>

@@ -27,13 +27,13 @@ const MuovoMusica = () => {
       </div>
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={musicaMBL1} />
+          <source media="(max-width: 730px)" srcSet={musicaMBL1} />
           <LazyImage src={musicaDSK1} alt="musica" />
         </picture>
       </div>
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={musicaMBL2} />
+          <source media="(max-width: 730px)" srcSet={musicaMBL2} />
           <LazyImage src={musicaDSK2} alt="musica" />
         </picture>
       </div>

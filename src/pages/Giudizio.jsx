@@ -27,7 +27,7 @@ const Giudizio = () => {
       </div>
       <div className="img1">
         <picture>
-          <source media="(max-width: 786px)" srcSet={giudizioMBL} />
+          <source media="(max-width: 730px)" srcSet={giudizioMBL} />
           <LazyImage src={giudizioDSK} alt="giudizio" />
         </picture>
       </div>
